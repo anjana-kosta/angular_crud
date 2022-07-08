@@ -1,0 +1,9 @@
+<!-- template dreiven form -->
+<form (submit)="submit()">
+    <label for="">Title</label>
+    <input type="text" name="title" [(ngModel)] = "title">
+
+    <label for="">Image</label>
+    <input type="text" name="image" [(ngModel)] = "image">
+    <button class="btn btn-info" type="submit">Add Pruduct</button>
+</form>

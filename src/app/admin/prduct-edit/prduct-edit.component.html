@@ -1,0 +1,8 @@
+<!-- //Reactive form -->
+<form [formGroup]="form" (submit)="submit()">
+    <label>Title</label>
+    <input type="text" name="title" formControlName = "title">
+    <label>Image</label>
+    <input type="text" name="image" formControlName = "image" >
+    <button class="btn btn-info" type="submit">Save</button>
+</form>

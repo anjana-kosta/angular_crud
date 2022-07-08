@@ -1,0 +1,30 @@
+<form>
+    <div class="grandParentContaniner">
+        <div class="parentContainer">
+            
+            
+            <form [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+                
+                <ul>
+                    <!-- <div *ngIf = "errormgs" disabled class="errorlogin">
+                        <img src="/assets/Warning ICON.png" width="20px" height="20px"/>
+                        <span><h2 class="errormessage">{{message}}</h2></span>
+                    </div>
+                    <br> -->
+                    <input placeholder="Email" type="text" formControlName="email" class="formGroup" required>
+                    <!-- <input placeholder="Email" name="email" [(ngModel)]="email" required email class="formGroup"> -->
+                </ul>
+                <ul>
+                    <input placeholder="Password" type="password" formControlName="password" class="formGroup" required>
+                    <!-- <input placeholder="Password" type="password" name="password" [(ngModel)]="password" required class="formGroup"> -->
+                </ul>
+
+                <ul class="center">
+                    <button class="button" type="submit">Log In</button>
+                </ul>
+            </form>
+            
+        </div>
+    </div>
+
+</form>

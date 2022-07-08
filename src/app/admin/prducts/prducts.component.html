@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>#id</th>
+      <th>Tittle</th>
+      <th>Image</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let prduct of prducts">
+      <td>{{prduct.id}}</td>
+      <td>{{prduct.title}}</td>
+      <td><img [src]="prduct.image" width="20%" /></td>
+      <td class="flex">
+        <a class="btn btn-info" [routerLink]="['/admin/product/', prduct.id, 'edit']">Edit</a>
+        <button class="btn btn-del btn-danger" (click)="prductDel(prduct.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a routerLink="/admin/product/create" class="btn pro btn-info">Add Product</a>
