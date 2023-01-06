@@ -30,17 +30,17 @@ const routes: Routes = [
       {
         path: 'product',
         component: PrductsComponent,
-        canActivate: [AuthguardGuard],
+        //canActivate: [AuthguardGuard],
       },
       {
         path: 'product/create',
         component: PrductCreateComponent,
-        canActivate: [AuthguardGuard],
+        //canActivate: [AuthguardGuard],
       },
       {
         path: 'product/:id/edit',
         component: PrductEditComponent,
-        canActivate: [AuthguardGuard],
+       // canActivate: [AuthguardGuard],
       }
     ],
   },
